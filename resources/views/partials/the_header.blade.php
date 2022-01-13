@@ -2,7 +2,15 @@
 $nav_links = [
     [
         "text"=> "Comics",
-        "route_name"=> "comics.index"
+        "route_name"=> "comics"
+    ],
+    [
+        "text"=> "create",
+        "route_name"=> "comics/create"
+    ],
+    [
+        "text"=> "update",
+        "route_name"=> "comics/update"
     ]
 ]
 @endphp
@@ -19,7 +27,7 @@ $nav_links = [
                     $prefix = explode('.', $link['route_name'])[0]
                 @endphp
                 <li>
-                    <a href="{{ $prefix }}">
+                    <a href="{{ $link['route_name'] }}">
                         {{ strtoupper($link['text']) }}
                     </a>
                 </li>

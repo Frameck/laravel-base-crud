@@ -56,4 +56,13 @@ a {
         padding: $spacing-y 0;
         gap: 20px;
     }
+
+    .card {
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
 }
