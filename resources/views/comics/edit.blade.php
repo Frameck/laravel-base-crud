@@ -3,6 +3,8 @@
 @section('page_title', 'Modifica comic | ' . $comic->id);
 
 @section('content')
+    <h2 class="my-3">Modify comic n°{{ $comic->id }}</h2>
+
     <div class="container" style="height: calc(100vh - 176px)">
         <form action="{{ route('comics.update'), $comic->id }}" method="post">
             
